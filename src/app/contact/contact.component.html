@@ -1,0 +1,33 @@
+<section id="contact" >
+    <div class="container">
+        <div class="row align-items-start text-center justify-content-center px-4">
+            <div class="col-12 mb-5">
+                <h2 class="main-header text-uppercase mb-4"> contact section
+                    <div class="star">
+                        <i class="fa-solid fa-star fs-5"></i>
+                    </div>
+                </h2>
+            </div>
+            <div class="col-md-7 col-lg-9 mb-4 mt-4 text-start">
+                <label for="userName" [class]="userNameLabelDisplayClass"  class="form-label">Username:</label>
+                <input type="text" (keydown)="userNameLabelDisplayClass='d-block'" (focusout)="userNameLabelDisplayClass='d-none'" class="form-control form-control-lg" id="userName" placeholder="Username">
+            </div>
+            <div class="col-md-7 col-lg-9 mb-4 mt-3 text-start">
+                <label for="age" [class]="ageLabelDisplayClass" class="form-label">Age:</label>
+                <input type="number" (keydown)="ageLabelDisplayClass='d-block'" (focusout)="ageLabelDisplayClass='d-none'" class="form-control form-control-lg" id="age" placeholder="Age">
+            </div>
+            <div class="col-md-7 col-lg-9 mb-4 mt-3 text-start">
+                <label for="email" [class]="emailLabelDisplayClass" class="form-label">Email address:</label>
+                <input type="email" (keydown)="emailLabelDisplayClass='d-block'" (focusout)="emailLabelDisplayClass='d-none'" class="form-control form-control-lg" id="email" placeholder="Email">
+            </div>
+            <div class="col-md-7 col-lg-9 mb-4 mt-3 text-start">
+                <label for="password" [class]="passwordLabelDisplayClass" class="form-label">Password:</label>
+                <input type="password" (keydown)="passwordLabelDisplayClass='d-block'" (focusout)="passwordLabelDisplayClass='d-none'" class="form-control form-control-lg" id="password" placeholder="Password">
+            </div>
+            <div class="col-md-7 col-lg-9 mb-4 mt-3 text-start text-start">
+                <button class="btn text-white text-capitalize"> send message </button>
+            </div>
+
+        </div>
+    </div>
+</section>

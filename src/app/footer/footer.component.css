@@ -1,0 +1,19 @@
+.footer{
+    background-color: yellow;
+    .first-footer{
+        background-color: #2C3E50;
+        h3{
+            font-size: var(--medium-font-size);
+            font-weight: var(--medium-font-weight);
+            line-height: var(--medium-line-height);    
+        }
+    }
+    .second-footer{
+        background-color: #1a252f;
+    }
+    p{
+        font-size: var(--small-font-size);
+        font-weight: var(--small-font-weight);
+        line-height: var(--small-line-height);
+    }
+}

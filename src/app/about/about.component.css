@@ -1,0 +1,10 @@
+#about{
+    min-height: 100%;
+    p{
+        text-align: start;
+        color: #fff;
+        font-size: var(--small-font-size);
+        font-weight: var(--small-font-weight);
+        line-height: var(--small-line-height);
+    }
+}

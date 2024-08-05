@@ -1,1 +1,124 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --xlarge-font-size: 2.5rem;
+    --large-font-size: 2rem;
+    --large-line-height: 3rem;
+    --large-font-weight: 700;
+    --medium-font-size: 1.75rem;
+    --medium-line-height: 2.125rem;
+    --medium-font-weight: 500;
+    --small-font-size: 1rem;
+    --small-line-height: 1.5rem;
+    --small-font-weight: 400;
+    --about-bg-color: #1ABC9C;
+}
+main{
+    min-height: calc(100vh - 106px);
+    margin-top: 106px;
+    &:has(#about){
+        background-color: var(--about-bg-color);
+    }
+
+}
+app-contact{
+display: block;
+    height: 100% !important;
+}
+section {
+    .container{
+        height: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+.main-header{
+    color: #fff;
+    font-size: 1.875rem;
+    font-weight: var(--large-font-weight);
+    line-height: var(--large-line-height);
+    position: relative;
+    padding-bottom: 20px;
+    .star{
+        background-color: var(--about-bg-color);
+        position: absolute;
+        top: 50%;
+        left: 47%;
+        height: 3px;
+        width: 3px;
+    }
+    
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+        height: 4px;
+        width: 16%;
+        background-color: #fff;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 30%;
+        height: 4px;
+        width: 16%;
+        background-color: #fff; 
+    }
+}
+@media screen and (min-width: 576px) {
+    .main-header{
+        .star{
+            top: 50%;
+            left: 48%;
+        }
+        
+        &::after{
+            left: 30%;
+            width: 16%;
+        }
+        &::before{
+            right: 30%;
+            width: 16%;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .main-header{
+        font-size: calc(var(--xlarge-font-size) - 5px);
+        .star{
+            top: 50%;
+            left: 48.5%;
+        }
+        
+        &::after{
+            left: 40%;
+            width: 8%;
+        }
+        &::before{
+            right: 40%;
+            width: 8%;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .main-header{
+        font-size: var(--xlarge-font-size);
+        .star{
+            top: 50%;
+            left: 49%;
+        }
+        &::after{
+            left: 42%;
+            width: 6%;
+        }
+        &::before{
+            right: 42%;
+            width: 6%;
+        }
+    }
+}

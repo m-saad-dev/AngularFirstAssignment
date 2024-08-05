@@ -1,0 +1,45 @@
+section .container{
+    align-items: start;
+    padding: 2rem 0;
+}
+
+#portfolio{
+    --portfolio-main-color: #2C3E50;
+    h2{
+        color: var(--portfolio-main-color);
+    }
+}
+.main-header{
+    &::after{
+        background-color: var(--portfolio-main-color);
+    }
+    &::before{
+        background-color: var(--portfolio-main-color);
+    }
+}
+.card-img-overlay{
+    --overlay-bg-color: rgb(26, 188, 156);
+    opacity: 0;
+    background-color: var(--overlay-bg-color);
+    transition: opacity .6s;
+    cursor: pointer;
+    &:hover{
+        opacity: .85;
+    }
+}
+#modal{
+    background-color: rgba(194, 219, 254,0.3);
+    position: fixed;
+    z-index: 8888;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    .img{
+        img{
+            width: 800px;
+            height: 800px;
+            object-fit: cover;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+section .container{
+    align-items: start;
+    padding: 2rem;
+}
+#contact{
+    min-height: 100%;
+    --contact-main-color: #2C3E50;
+    h2{
+        color: var(--contact-main-color);
+    }
+}
+.main-header{
+    &::after{
+        background-color: var(--contact-main-color);
+    }
+    &::before{
+        background-color: var(--contact-main-color);
+    }
+}
+input{
+    border: 0;
+    border-bottom: solid 1px #dee2e6 !important;
+    box-shadow: none !important;
+    &::placeholder {
+        font-size: 16px;
+    }
+}
+button{
+    background-color: #1abc9c;
+}
+label{
+    color: #1ABC9C;
+}
